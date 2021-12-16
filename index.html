@@ -5,100 +5,96 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ivan Lovkov</title>
-        <link href="Styles.css" rel="stylesheet"/>
+        <link href="Styles.css" rel="stylesheet">
     </head>
     <body>
-        <table cellspacing="20">
-            <tr>
-                <td>
-                    <img src="Avatar.jpg" width="250" alt="Тут должен быть мой аватар">
-                </td>
-                <td>
-                    <h1>
-                        Иван Ловков
-                    </h1>
-                    <em>
-                        <p>Инженер от рождения </p>
-                    </em> 
-                        <p>Люблю проводить время с семьёй, изобретать игрушки и программировать</p> 
-                    
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <h2>
-            Мои социальные сети
-        </h2>
-        <ul>
-            <li><a href="https://github.com/ProIvanko" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/ivan-lovkov-674556184/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://vk.com/proivanko" target="_blank">ВКонтакте</a></li>
-            <li><a href="https://www.facebook.com/ProIvanko/" target="_blank">FaceBook</a></li>
-        </ul>
-        
-        <hr>
-        
-        <h2>
-            Мои хобби
-        </h2>
-        <ol>
-            <li>Конструирование игрушек</li>
-            <li>Кулинария</li>
-            <li>Компьютерные игры</li>
-        </ol>
+        <div class="container">
+            <div class="info">
+                <img src="Avatar.jpg" width="250" alt="Тут должен быть мой аватар" class="avatar"/>
+                <h1>Иван Ловков</h1>
+                <p>Инженер по духу</p>
+                <p>Люблю проводить время с семьёй, изобретать игрушки и программировать</p>
 
-        <hr>
-        
-        <h2>Опыт работы</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        Компания
-                    </th>
-                    <th>
-                        Должность
-                    </th>
-                    <th>
-                        Годы работы
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Строммаш</td>
-                    <td>Инженер-Конструктор</td>
-                    <td>2017-2019</td>
-                </tr>
-                <tr>
-                    <td>Архстройконсалт</td>
-                    <td>Инженер</td>
-                    <td>2019-2022</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <hr>
-        
-        <h2>
-            Связаться со мной
-        </h2>
-            <form action="/">
-                <label for="name">Ваше имя</label>
-                <input type="text" id="name" placeholder="Введите имя сюда">
+                <h4>Мои социальные сети</h4>
+                
+                <a href="https://www.linkedin.com/in/ivan-lovkov-674556184/" target="_blank">LinkedIn</a>
+                |
+                <a href="https://vk.com/proivanko" target="_blank">ВКонтакте</a>
+                |
+                <a href="https://www.facebook.com/ProIvanko/" target="_blank">FaceBook</a>
+                |
+                <a href="https://github.com/ProIvanko" target="_blank">Github</a>
+                
+            </div>
+            <hr>
+            
+            <h2>Мои хобби</h2>
+            <ol>
+                <li>Моделирование</li>
+                <li>Конструирование игрушек</li>
+                <li>Кулинария</li>
+                <li>Компьютерные игры</li>
+            </ol>
+
+            <hr>
+            
+            <h2>Опыт работы</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Компания
+                        </th>
+                        <th>
+                            Должность
+                        </th>
+                        <th>
+                            Годы работы
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Строммаш</td>
+                        <td>Инженер-Конструктор</td>
+                        <td>2017-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Архстройконсалт</td>
+                        <td>Инженер</td>
+                        <td>2019-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <hr>
+            
+            <h2>
+                Связаться со мной
+            </h2>
+                <form action="/">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Введите имя сюда">
+                    <br>
+                    <label for="email">Ваш Email</label>
+                    <input type="text" id="email" placeholder="Введите имя сюда">
                 <br>
-                <label for="email">Ваш Email</label>
-                <input type="text" id="email" placeholder="Введите имя сюда">
-            <br>
 
-            <label for="text">Ваше сообщение:</label> 
-            <br>
-            <textarea id="text" rows="2" cols="23"></textarea>
-            <br>
-            <input type="submit" value="Связаться" id="send">
-            </form>
+                <label for="text">Ваше сообщение:</label> 
+                <br>
+                <textarea id="text" rows="2" cols="23"></textarea>
+                <br>
+                <input type="submit" value="Связаться" id="send">
+                </form>
 
+                <div class="box-model">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+        </div>
+
+        <div style="margin-bottom: 500px;"></div>
     </body>
 </html>
