@@ -1,125 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ivan Lovkov CV</title>
-        <link href="Styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <div class="card_info">
-                <div class="avatar">
-                    <img src="Avatar.jpg" width="250" alt="Тут должен быть мой аватар" class="avatar"/>
-                </div>
-                <div class="info">
-                    <div >
-                        <h1>Иван Ловков</h1>
-                        <p>Инженер - это образ мышления</p>
-                        <p>Люблю проводить время с семьёй, решать поставленные задачи и программировать</p>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
-                        <h4>Мои социальные сети</h4>
-                        
-                        <a href="https://www.linkedin.com/in/ivan-lovkov-674556184/" target="_blank">LinkedIn</a>
-                        |
-                        <a href="https://vk.com/proivanko" target="_blank">ВКонтакте</a>
-                        |
-                        <a href="https://www.facebook.com/ProIvanko/" target="_blank">FaceBook</a>
-                        |
-                        <a href="https://github.com/ProIvanko" target="_blank">Github</a>
-                        |
-                        <a href=https://codepen.io/ProIvanko>CodePen</a>
-                    </div>
-                </div>    
-            </div>        
-            
-            <div class="card bg-yellow">
-                <h2>Мои хобби</h2>
-                <ol class="list">
-                    <li>Моделирование и конструирование игрушек</li>
-                    <li>Кулинария</li>
-                    <li>Компьютерные игры</li>
-                    <li>Настольные игры</li>           
-                </ol>
-            </div>
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Fira Sans', sans-serif;
+}
 
-            <div class="card bg-green">
-                <h2>Опыт работы</h2>
-                <table class="table">
-                    <tr>
-                        <td>Строммаш</td>
-                        <td>Инженер-Конструктор</td>
-                        <td>2017-2019</td>
-                    </tr>
-                    <tr>
-                        <td>Архстройконсалт</td>
-                        <td>Инженер</td>
-                        <td>2019-2023</td>
-                    </tr>
-                </table>
-            </div>
-            
-            <div class="card bg-blue">
-                <h2>Навыки</h2>
+a {
+    color: black;
+    text-decoration: none;
+}
 
-                    <table class="table">
-                        <tr>
-                            <th>Hard skills</th>
-                            <th>Soft skills</th>
-                            <th>Languages</th>
-                        </tr>
-                        
-                        <tr>
-                            
-                            <td>
-                                <li>Javascript</li>
-                                <li>HTML/CSS 3</li>
-                                <li>.NET</li>
-                                <li>Python 3 (Базовые понятия)</li>
-                                <li>HTML/CSS 3</li>                            
-                            </td>
-                            <td>
-                                <li>Корпоративная этика</li>
-                                <li>Умение работать в команде</li>
-                                <li>Коммуникабельность</li>
-                                <li>Исполнительность</li>
-                                <li>КТН по прикладной мемологии</li>                          
-                            </td>
-                            <td>
-                                <li>Английский : B1</li>
-                                <li>Русский : С2</li>                             
-                            </td>
-                        </tr>
-                    </table>
-            </div>
+a:hover {
+    text-decoration:underline;
+    color: blue;
+}
 
-                <!-- <div class="box-model">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div> -->
-                    <!-- <form action="/">
-                        <div class="form-group">
-                            <label for="name">Ваше имя</label>
-                            <input type="text" id="name" placeholder="Введите имя сюда">
-                        </div>
-                        <div class="form-group"> 
-                            <label for="email">Ваш Email</label>
-                            <input type="text" id="email" placeholder="Введите имя сюда">
-                        </div>
-                        <div class="form-group">
-                            <label for="text">Ваше сообщение:</label> 
-                            <textarea id="text" rows="2" cols="23"></textarea>
-                        </div>
+a:active {
+    color: green;   
+}
 
-                        <input type="submit" value="Связаться" id="send">
+h2 {
+    font-size: 30px;
+}
 
-                    </form> -->
-                
-        </div>
+.avatar {
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 14px 4px rgba(0, 0, 0, 25);
+    margin-right: 30px;
+}
 
-        <div style="margin-bottom: 500px;"></div>
-    </body>
-</html>
+.info p {
+    color: #86898f;
+    margin: 0px;
+    margin-bottom: 10px;   
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    word-spacing: 0px;
+}
+
+.info {
+    margin-bottom: 20px;
+    
+}
+
+.card_info{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.social {
+    background-color: green;
+    padding: 15px;
+    border: 5px solid red;
+    margin: 15px;
+    border-bottom-style: dotted;
+    border-top-width: 15px;
+    border-right-color: blue;
+}
+
+.box-model > div {
+    background-color: black;
+    height: 200px;
+    width: 25%;
+    float: left;
+    border: 4px solid red;
+    box-sizing: border-box;
+}
+
+.bg-yellow {
+    background-color: #fff9dc;
+}
+
+.bg-green {
+    background-color: #e5ffe7;
+}
+
+.bg-blue {
+    background-color: #ece5ff;
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table th{
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.table td li{
+    padding-bottom: 10px;
+}
+.table tr{
+    margin-bottom: 30px;
+}
+
+/* .table td:not(:first-child) {
+    color: #86898f;
+} */
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+    
+}
