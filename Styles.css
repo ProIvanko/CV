@@ -127,6 +127,11 @@ h2 {
     margin-bottom: 30px;
 }
 
+.table li{
+    margin-right: 4px;
+    padding-right: 4px;
+}
+
 /* .table td:not(:first-child) {
     color: #86898f;
 } */
